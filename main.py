@@ -8,7 +8,18 @@ import datetime as dt
 
 class Record:
     def __init__(self, amount, comment, date=''):
+        """
+        Class is aimed to record 'amount' of money 'date' of spent and how have been spent money 'comment'.
 
+        Parameters
+        ----------
+        amount : int
+            Presents amount spent money.
+        comment : str
+            For what have been spent money.
+        date : str
+            Date of spent.
+        """
         self.amount = amount
         self.date = (
             dt.datetime.now().date() if
